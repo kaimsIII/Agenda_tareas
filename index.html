@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Lista de Tareas con Prioridad</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app-container">
+    <h1>Mis Tareas</h1>
+    <div class="input-container">
+        <input type="text" id="inputTarea" placeholder="Añade una tarea aquí...">
+        <input type="date" id="inputFechaVencimiento">
+        <select id="selectPrioridad">
+            <option value="1">Prioridad 1</option>
+            <option value="2">Prioridad 2</option>
+            <option value="3">Prioridad 3</option>
+            <option value="4">Prioridad 4</option>
+            <option value="5">Prioridad 5</option>
+        </select>
+        <button id="btnAgregar">Agregar</button>
+    <button id="btnModoOscuro">Modo Oscuro</button>    
+    </div>
+    <div class="filter-container">
+        <button id="btnTodas">Todas</button>
+        <button id="btnCompletadas">Completadas</button>
+        <button id="btnPendientes">Pendientes</button>
+    </div>
+    <ul id="listaTareas"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
